@@ -3,7 +3,7 @@ layout: post
 title:  Install Go in Kali Linux and Set the Environment Variable Path
 author:  sudosuraj
 date:  2024-08-17
-categories: 
+categories: bugbounty
 tags:  [linux, go, go-lang, setup]
 image:
   path: /assets/img/headers/go.png
