@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  How To Use Burpsuite Pro For Free
-author:  0xbug
+title:  How To Install Burpsuite Pro in Windows and Linux For Free
+author:  sudosuraj
 date:  2024-02-05
 categories:  [bugbounty]
 tags:  [bugbounty, bugbountytips]
@@ -9,7 +9,7 @@ image:
   path: /assets/img/headers/Burp-Suite-logo.png
   alt: Burpsuite Pro
 ---
-#  How To Use Burpsuite Pro For Free
+#  How To Install Burpsuite Pro in Windows and Linux For Free
 Hello Friend!  
 In this bug bounty tip, I will walk you through how you can use burpsuite pro for free in Linux or Windows environment.  
 **(Note: This is for education purpose only)**  
@@ -48,6 +48,18 @@ alias burpy='"/usr/lib/jvm/java-17-openjdk-amd64/bin/java" "--add-opens=java.des
 ```  
 Enjoy!!!  
 
+## Final words
+I hope this tutorial saved your time, thanks for reding :)
+Logging out sudo.
+## Find me: 
+- [LinkedIn](https://linkedin.com/in/sudosuraj)
+- [GitHub](https://github.com/sudosuraz)
+- [Bugcrowd](https://bugcrowd.com/sudosuraj)
+- [X](https://x.com/sudosuraj)
+- [Instagram](https://instagram.com/sudosuraj)
+
+## Contact For Cyber Security Business
+- sudosuraj@proton.me
 
 
 
