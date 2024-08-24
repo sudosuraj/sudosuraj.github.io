@@ -30,7 +30,7 @@ Navigate to `https://go.dev/doc/install` and download the zipped folder containi
 Run the following command to extract the downloadd zip file an to install go-lang.
 
 ```
-rm -rf /usr/local/go && tar -C /usr/local -xzf go1.23.0.linux-amd64.tar.gz
+rm -rf /usr/local/go && tar -C $HOME -xzf go1.23.0.linux-amd64.tar.gz
 ```
 
 The above command makes sure to delete if the go is already present in the sysem, and install only new one.
@@ -47,9 +47,8 @@ nano ~/.profile
 Add the following bash script at the end of the file:
 ```
 if [ -d "$HOME/go" ]; then
-    GOPATH=/home/kali/go
-    export GOROOT=/usr/local/go
-    PATH=$PATH:$GOROOT/bin/:$GOPATH/bin
+    export GOROOT=$HOME/go
+    PATH=$PATH:$GOROOT/bin
 fi
 ```
 Now save the profile file.
@@ -66,15 +65,13 @@ You can open the new terminal and run the following commands verify the installa
 ```
 go version
 which go
-echo $GOROOt
-echo $GOPATH
 ```
 ## Final words
 I hope this tutorial saved your time, thanks for reding :)
 Logging out sudo.
 ## Find me: 
 - [LinkedIn](https://linkedin.com/in/sudosuraj)
-- [GitHub](https://github.com/sudosuraz)
+- [GitHub](https://github.com/sudosuraj)
 - [Bugcrowd](https://bugcrowd.com/sudosuraj)
 - [X](https://x.com/sudosuraj)
 - [Instagram](https://instagram.com/sudosuraj)

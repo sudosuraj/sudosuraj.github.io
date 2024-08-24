@@ -21,18 +21,18 @@ image:
 ### Step 1
 In the pc, I have unc0ver IPA file, which I am gonna install in jailbreak iOS device, first, run this command to transfer IPA file as zip file into iOS device with SCP command.
 
-![image](https://github.com/sudosuraz/sudosuraz.github.io/assets/81553118/654125ed-480d-4cfe-827f-d36038dccf3a)
+![image](https://github.com/sudosuraj/sudosuraj.github.io/assets/81553118/654125ed-480d-4cfe-827f-d36038dccf3a)
 
 ### Step 2
 Now, take the root shell of the iOS device using the SSH.
 
-![image](https://github.com/sudosuraz/sudosuraz.github.io/assets/81553118/a7cd4ca6-67c8-4a19-a120-c5a5efb78322)
+![image](https://github.com/sudosuraj/sudosuraj.github.io/assets/81553118/a7cd4ca6-67c8-4a19-a120-c5a5efb78322)
 
 ## Step 4
 Open the directory where we copied the unsigned IPA file as zip file and use the unzip command to unzip.
 
-![image](https://github.com/sudosuraz/sudosuraz.github.io/assets/81553118/57150221-5c25-4c05-9bab-3fbc4b8026b6)
-![image](https://github.com/sudosuraz/sudosuraz.github.io/assets/81553118/25bc91bd-6ab1-4185-898c-f69bcc7519e8)
+![image](https://github.com/sudosuraj/sudosuraj.github.io/assets/81553118/57150221-5c25-4c05-9bab-3fbc4b8026b6)
+![image](https://github.com/sudosuraj/sudosuraj.github.io/assets/81553118/25bc91bd-6ab1-4185-898c-f69bcc7519e8)
 
 Here, after the unzip is done, we can find a new folder named **Payload**, inside that, we can see the **unc0ver.app** folder.
 

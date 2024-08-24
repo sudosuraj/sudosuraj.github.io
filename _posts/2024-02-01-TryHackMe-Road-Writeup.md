@@ -34,7 +34,7 @@ Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 
 ```
 The port 80:  
-![image](https://github.com/sudosuraz/sudosuraz.github.io/assets/81553118/02af5be9-c3bd-44a9-9150-17f21b6d6185)  
+![image](https://github.com/sudosuraj/sudosuraj.github.io/assets/81553118/02af5be9-c3bd-44a9-9150-17f21b6d6185)  
 
 ### Directory Enumeration
 ```bash
@@ -46,39 +46,39 @@ dirsearch.py -u http://10.10.141.52/
 ```
 
 Lets visit /v2  
-![image](https://github.com/sudosuraz/sudosuraz.github.io/assets/81553118/1744ff13-93fd-48d6-b732-35d8bd7815b3)  
+![image](https://github.com/sudosuraj/sudosuraj.github.io/assets/81553118/1744ff13-93fd-48d6-b732-35d8bd7815b3)  
 
 Here, We can register ourselve, lets do a quick registration.  
 
-![image](https://github.com/sudosuraz/sudosuraz.github.io/assets/81553118/0215a7f6-58d2-4afe-ab36-c7f9b56ea36b)
+![image](https://github.com/sudosuraj/sudosuraj.github.io/assets/81553118/0215a7f6-58d2-4afe-ab36-c7f9b56ea36b)
 
 Now, lets login...  
-![image](https://github.com/sudosuraz/sudosuraz.github.io/assets/81553118/23558022-dc9c-4f34-8073-dc03d7b2a26a)
+![image](https://github.com/sudosuraj/sudosuraj.github.io/assets/81553118/23558022-dc9c-4f34-8073-dc03d7b2a26a)
 
 ### Admin account takeover
 In the profile section, we got an option to upload to file, but it was only availabe for the admin@sky.thm user.  
 So lets takeover admin account first.  
 
-![image](https://github.com/sudosuraz/sudosuraz.github.io/assets/81553118/052d4104-9f38-4ad9-b419-9dc217bb2b25)  
+![image](https://github.com/sudosuraj/sudosuraj.github.io/assets/81553118/052d4104-9f38-4ad9-b419-9dc217bb2b25)  
 
-![image](https://github.com/sudosuraz/sudosuraz.github.io/assets/81553118/83d1c48d-a667-4606-93f8-6f5564c64ab8)  
+![image](https://github.com/sudosuraj/sudosuraj.github.io/assets/81553118/83d1c48d-a667-4606-93f8-6f5564c64ab8)  
 
-![image](https://github.com/sudosuraz/sudosuraz.github.io/assets/81553118/09b380fa-19ca-440c-aa4d-3ece0999ce7a)  
+![image](https://github.com/sudosuraj/sudosuraj.github.io/assets/81553118/09b380fa-19ca-440c-aa4d-3ece0999ce7a)  
 
 Now, lets login as admin@sky.thm user!  
 
-![image](https://github.com/sudosuraz/sudosuraz.github.io/assets/81553118/1a4502dd-315c-4ea5-8de1-d01df086c96d)  
+![image](https://github.com/sudosuraj/sudosuraj.github.io/assets/81553118/1a4502dd-315c-4ea5-8de1-d01df086c96d)  
 
 ## Initial Shell Access
 Now we have access to upload to file, lets upload php reverse shell of pentest monkey.  
 
-![image](https://github.com/sudosuraz/sudosuraz.github.io/assets/81553118/c00b2d5c-dd66-450f-bf2f-05c1002160f2)
+![image](https://github.com/sudosuraj/sudosuraj.github.io/assets/81553118/c00b2d5c-dd66-450f-bf2f-05c1002160f2)
 
-![image](https://github.com/sudosuraz/sudosuraz.github.io/assets/81553118/32df1413-ce0e-449e-8801-e67b2e9e8e55)
+![image](https://github.com/sudosuraj/sudosuraj.github.io/assets/81553118/32df1413-ce0e-449e-8801-e67b2e9e8e55)
 
 To Find out where the payload gonna uploaded, we need to intercept the response of the request, and we got this location.   
 
-![image](https://github.com/sudosuraz/sudosuraz.github.io/assets/81553118/afdb48de-f9b7-4c86-83ff-70856738962a)
+![image](https://github.com/sudosuraj/sudosuraj.github.io/assets/81553118/afdb48de-f9b7-4c86-83ff-70856738962a)
 
 
 Lets visit this URI.  
@@ -87,11 +87,11 @@ Lets visit this URI.
 http://<machine-ip>/v2/profileimages/
 ```
 
-![image](https://github.com/sudosuraz/sudosuraz.github.io/assets/81553118/7a2b0610-7a7e-40cf880c-1ea333207226)  
+![image](https://github.com/sudosuraj/sudosuraj.github.io/assets/81553118/7a2b0610-7a7e-40cf880c-1ea333207226)  
 
 lets take this request into burp repeater and do as follow.
 
-![image](https://github.com/sudosuraz/sudosuraz.github.io/assets/81553118/d8bd498f-3b93-4b0a-9912-3f6797d123d1)  
+![image](https://github.com/sudosuraj/sudosuraj.github.io/assets/81553118/d8bd498f-3b93-4b0a-9912-3f6797d123d1)  
 
 Turn on NetCat listner.  
 ```Bash
@@ -99,10 +99,10 @@ nc -lvnp 1337
 ```
 
 Append the name of the file we uploaded, and send.  
-![image](https://github.com/sudosuraz/sudosuraz.github.io/assets/81553118/3e692bdd-4469-4091-bbbd-c0022ef30ba8)  
+![image](https://github.com/sudosuraj/sudosuraj.github.io/assets/81553118/3e692bdd-4469-4091-bbbd-c0022ef30ba8)  
 
 Here we got shell access!!!  
-![image](https://github.com/sudosuraz/sudosuraz.github.io/assets/81553118/6dc184eb-e39b-465e-be66-cf7460c6c8f0)
+![image](https://github.com/sudosuraj/sudosuraj.github.io/assets/81553118/6dc184eb-e39b-465e-be66-cf7460c6c8f0)
 
 We can retreive first flag here,  
 

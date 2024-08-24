@@ -26,10 +26,10 @@ description: >- # used by seo meta and the atom feed
   Suraj Sharma aka sudosuraj, weirdo security nerd and bug bounty hunter from India.
 
 # fill in the protocol & hostname for your site, e.g., 'https://username.github.io'
-url: "https://sudosuraz.github.io"
+url: "https://sudosuraj.github.io"
 
 github:
-  username: sudosuraz # change to your github username
+  username: sudosuraj # change to your github username
 
 twitter:
   username: sudosuraj # change to your twitter username

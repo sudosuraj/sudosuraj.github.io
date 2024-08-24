@@ -17,7 +17,7 @@ and web bug bounty and also some personal research in field of cyber security.
 
 ## Find me: 
 - [LinkedIn](https://linkedin.com/in/sudosuraj)
-- [GitHub](https://github.com/sudosuraz)
+- [GitHub](https://github.com/sudosuraj)
 - [Bugcrowd](https://bugcrowd.com/sudosuraj)
 - [X](https://x.com/sudosuraj)
 - [Instagram](https://instagram.com/sudosuraj)
