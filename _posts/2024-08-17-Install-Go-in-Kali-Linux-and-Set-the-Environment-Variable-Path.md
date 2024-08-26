@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Install Go in Kali Linux and Set the Environment Variable Path
-author:  sudosuraj
+author:  Suraj Sharma
 date:  2024-08-17
 categories: bugbounty
 tags:  [linux, go, go-lang, setup]
@@ -30,10 +30,11 @@ Navigate to `https://go.dev/doc/install` and download the zipped folder containi
 Run the following command to extract the downloadd zip file an to install go-lang.
 
 ```
-rm -rf /usr/local/go && tar -C $HOME -xzf go1.23.0.linux-amd64.tar.gz
+wget https://go.dev/dl/go1.23.0.linux-amd64.tar.gz
+
+tar -C $HOME -xzf go1.23.0.linux-amd64.tar.gz
 ```
 
-The above command makes sure to delete if the go is already present in the sysem, and install only new one.
 NOTE: you may be asked to run command as sudo.
 
 ### Setup Go Environment Varialble
@@ -47,17 +48,15 @@ nano ~/.profile
 Add the following bash script at the end of the file:
 ```
 if [ -d "$HOME/go" ]; then
-    export GOROOT=$HOME/go
-    PATH=$PATH:$GOROOT/bin
+    export GOPATH=$HOME/go
+    PATH=$PATH:$GOPATH/bin
 fi
 ```
 Now save the profile file.
-Open the `~/.bashrc` file and add the following bash script at the end of the file:
+Now run the folowing command:
 
 ```
-if [ -f ~/.profile ]; then
-    . ~/.profile
-fi
+source ~/.profile
 ```
 Now done, we are ready to run all go tools without any error!
 
