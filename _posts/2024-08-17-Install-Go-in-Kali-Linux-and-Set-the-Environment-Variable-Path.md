@@ -26,37 +26,47 @@ Navigate to `https://go.dev/doc/install` and download the zipped folder containi
 
 ![image](https://github.com/user-attachments/assets/b3cc85f4-5791-4e00-b172-238c71b21af3)
 
-### Install go
+### Manual Install go
 Run the following command to extract the downloadd zip file an to install go-lang.
 
 ```
 wget https://go.dev/dl/go1.23.0.linux-amd64.tar.gz
 
-tar -C $HOME -xzf go1.23.0.linux-amd64.tar.gz
+sudo tar -C /usr/local -xzf go1.23.0.linux-amd64.tar.gz
 ```
 
 NOTE: you may be asked to run command as sudo.
 
+After that, create a go directory on users's home, i.e. /home/kali with the following sub directories.
+```
+mkdir $HOME/go
+mkdir $HOME/go/bin
+mkdir $HOME/go/pkg
+mkdir $HOME/go/src
+```
+The above sub-directories are very immpotant to run any go script.
+
 ### Setup Go Environment Varialble
 After the installation, we need to add the GOROOT and GOPATH in current shell environment variables, so whenever we
 try to run specific go tool, it can be run.
-To do this, open the `~/.profile` file.
+To do this, open the `~/.bashrc` file.
 ```
-nano ~/.profile
+nano ~/.bashrc
 ```
 
 Add the following bash script at the end of the file:
 ```
 if [ -d "$HOME/go" ]; then
-    export GOPATH=$HOME/go
-    PATH=$PATH:$GOPATH/bin
+    GOPATH=$HOME/go
+    GOROOT=/usr/local/go
+    PATH=$PATH:$GOROOT/bin:$GOPATH/bin
 fi
 ```
-Now save the profile file.
+Now save the bashrc file.
 Now run the folowing command:
 
 ```
-source ~/.profile
+source ~/.bashrc
 ```
 Now done, we are ready to run all go tools without any error!
 
@@ -65,6 +75,16 @@ You can open the new terminal and run the following commands verify the installa
 go version
 which go
 ```
+
+## Automated Installation (Recommanded!)
+I have created a bsh script, [You can find this here](https://github.com/sudosuraj/Awesome-Bug-Bounty/blob/main/install-go.sh) which automatically installs and setup the go environment for you within seconds!
+Run the following commands to install automatically:
+```
+wget https://raw.githubusercontent.com/sudosuraj/Awesome-Bug-Bounty/main/install-go.sh
+chmod +x install-go.sh
+sudo bash install-go.sh
+```
+
 ## Final words
 I hope this tutorial saved your time, thanks for reding :)
 Logging out sudo.
