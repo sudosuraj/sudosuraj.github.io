@@ -39,7 +39,7 @@ Shell Type: Limited Shell
 
 ## Nmap scan with minmap script:
 
-![image.png](image%201.png)
+![image.png](/assets/img/sightless/image%201.png)
 
 ```
 ┌──(kali㉿kali)-[~/HTB/sightless]
