@@ -31,8 +31,6 @@ Privilege Escalatin: CHROME Drive Exploit to web app debugging and gaining admin
 Shell Type: Limited Shell
 ---
 
-![image.png](/assets/img/sightless/image.png)
-
 [Owned Sightless from Hack The Box!](https://www.hackthebox.com/achievement/machine/539268/624?ref=ecorpsecurity.com)
 
 # USER FLAG:
